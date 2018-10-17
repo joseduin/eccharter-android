@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "492333937601",
+    "firebase_url": "https://ec-charter.firebaseio.com",
+    "project_id": "ec-charter",
+    "storage_bucket": "ec-charter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492333937601:android:11e9b4e6e33d0f19",
+        "android_client_info": {
+          "package_name": "flight.report.ec.charter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492333937601-ugeb6qn2ee52pc9tdigthd2rsckj5hck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1E5bN7dAOFId_-9GqjizE6BHJau5ONOI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNube"
+    android:onClick="hideKeyboard"
+    tools:context=".aircrafts.AircraftActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include layout="@layout/toolbar" />
+            <View style="@style/toolbar_line"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+         <LinearLayout
+            android:layout_below="@id/appBar"
+             android:orientation="vertical"
+             android:layout_margin="@dimen/reciclerMargin"
+             android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+             <TextView
+                 style="@style/result"
+                 android:id="@+id/result"
+                 android:visibility="gone"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recicler"
+                android:layout_margin="@dimen/reciclerMargin"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

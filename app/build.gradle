@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "flight.report.ec.charter"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 8
+        // 1. app version
+        // 2. se crea/elimina una clase
+        // 3. se crea/elimina un metodo
+        // 4. cambios menores
+        versionName "1.2.4.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.mindorks:paracamera:0.2.2'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+// Gallery
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    implementation 'com.jsibbold:zoomage:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0' //Imagen Circular
+// PDF
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.barteksc:pdfium-android:1.9.0'
+// Events
+    implementation 'org.greenrobot:eventbus:3.1.1'
+//Firebase
+    implementation 'com.google.firebase:firebase-messaging:15.0.2'
+    implementation 'com.google.firebase:firebase-core:15.0.2'
+// AWS
+    implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.6.+@aar') { transitive = true }
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.6.+'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.6.+'
+
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:statusBarBackground="@color/colorPrimaryDark"
+    android:background="@drawable/wal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="flight.report.ec.charter.SpashActivity">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/horizontal_padding_spash"
+        android:paddingRight="@dimen/horizontal_padding_spash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/logo_spash"
+            android:layout_height="@dimen/logo_spash"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pin"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/insert_pin"
+                android:inputType="phone"
+                android:password="true" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/boton_accent"
+                android:text="@string/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

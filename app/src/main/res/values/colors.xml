@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#093C61</color>
+    <color name="colorPrimaryLight">#0b4975</color>
+    <color name="colorPrimaryDark">#093a5d</color>
+    <color name="colorAccent">#f7ab33</color>
+
+    <color name="colorAccentDark">#f59b0a</color>
+    <color name="colorAccentLight">#f7af3b</color>
+
+    <color name="colorBlanco">#fff</color>
+    <color name="colorTrasparente">#00ffffff</color>
+    <color name="colorNube">#ecf0f1</color>
+    <color name="colorRojo">#e74c3c</color>
+    <color name="colorAmarillo">#f7ab33</color>
+
+    <color name="green_sea">#16a085</color>
+    <color name="nephritis">#27ae60</color>
+    <color name="wisteria">#8e44ad</color>
+    <color name="dracula_orchid">#2d3436</color>
+</resources>

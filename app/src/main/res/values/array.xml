@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabs">
+        <item>Basic</item>
+        <item>Flight</item>
+        <item>Expenses</item>
+        <item>Report</item>
+        <item>Plan</item>
+        <item>Remarks</item>
+    </string-array>
+
+    <string-array name="aircraft_tabs">
+        <item>Document</item>
+        <item>Component</item>
+        <item>Chat</item>
+    </string-array>
+
+    <string-array name="photo">
+        <item>Take a photo</item>
+        <item>Gallery</item>
+    </string-array>
+</resources>

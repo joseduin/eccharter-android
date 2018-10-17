@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="flight.report.ec.charter.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include layout="@layout/toolbar" />
+            <View style="@style/toolbar_line"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/customerContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/customer"
+                        android:text="@string/customer"
+                        android:gravity="left|center_vertical"
+                        android:background="@color/colorTrasparente"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:background="@color/colorTrasparente"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="#b7baba"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:id="@+id/aircraftContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/aircraft"
+                        android:text="@string/aircraft"
+                        android:gravity="left|center_vertical"
+                        android:background="@color/colorTrasparente"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:background="@color/colorTrasparente"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="#b7baba"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:id="@+id/captainContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/capitan_copilot"
+                        android:text="@string/capitan_copilot"
+                        android:gravity="left|center_vertical"
+                        android:background="@color/colorTrasparente"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:background="@color/colorTrasparente"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="#b7baba"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <Switch
+                    android:id="@+id/switchServer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/sent_to_server"
+                    android:textOff="@string/swichOff"
+                    android:textOn="@string/swichOn" />
+
+                <View
+                    android:background="#b7baba"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <Switch
+                    android:id="@+id/switchMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/send_to_mail"
+                    android:textOff="@string/swichOff"
+                    android:textOn="@string/swichOn"/>
+
+                <View
+                    android:background="#b7baba"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:hint="@string/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="#b7baba"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

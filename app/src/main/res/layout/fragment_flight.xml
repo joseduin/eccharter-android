@@ -1,0 +1,144 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNube"
+    android:paddingLeft="@dimen/margin_top_init"
+    android:paddingRight="@dimen/margin_top_init"
+    tools:context="flight.report.ec.charter.fragment.Flight">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/route"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/gps_flight_time"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/gps_flight_time"
+                android:inputType="number|numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/hour_initial"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/hour_initial"
+                android:inputType="number|numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/hour_final"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/hour_final"
+                android:inputType="number|numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/long_time"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/long_time"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/engine1"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/engine1"
+                    android:inputType="number|numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/spinner_engine1"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/sub_titulo"
+                android:text="@string/engine2"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/engine2"
+                    android:inputType="number|numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/spinner_engine2"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

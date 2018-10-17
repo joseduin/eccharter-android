@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left</item>
+    </style>
+
+    <style name="noAnimTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="boton_accent" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/rounded_corner_button_accent</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorBlanco</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="boton_primary" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/rounded_corner_button_primary</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorBlanco</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="result">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/result</item>
+        <item name="android:layout_marginRight">@dimen/result_margin_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/result_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/reciclerMargin</item>
+        <item name="android:layout_marginTop">@dimen/reciclerMargin</item>
+    </style>
+
+    <style name="sub_titulo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sub_titulo</item>
+    </style>
+
+    <style name="sub_sub_titulo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sub_sub_titulo</item>
+    </style>
+
+    <style name="resaltar">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="resaltar2">
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@color/green_sea</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="resaltar3">
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@color/wisteria</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="resaltar4">
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@color/nephritis</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="resaltar5">
+        <item name="android:textSize">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@color/colorRojo</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+    </style>
+
+    <style name="toolbar_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/icon_size_horizontal</item>
+        <item name="android:textColor">@color/colorNube</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sub_titulo</item>
+    </style>
+
+    <style name="back">
+        <item name="android:layout_width">@dimen/icon_size_horizontal</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@color/colorTrasparente</item>
+    </style>
+
+    <style name="toolbar_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.Custom" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CustomActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+</resources>

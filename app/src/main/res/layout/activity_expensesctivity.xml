@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNube"
+    android:onClick="hideKeyboard"
+    tools:context="flight.report.ec.charter.Expensesctivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include layout="@layout/toolbar" />
+            <View style="@style/toolbar_line"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_top_init"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sub_sub_titulo"
+                android:text="@string/total"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/expenses_total"
+                    android:inputType="number|numberDecimal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/expenses_currency"
+                    android:text="@string/current"
+                    android:layout_weight=".3"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/sub_sub_titulo"
+                android:text="@string/description"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/expenses_description"
+                android:lines="5"
+                android:minLines="2"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/expenses_photo_path"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/expenses_btn_photo"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_weight=".1"
+                    android:clickable="true"
+                    android:background="@color/colorTrasparente"
+                    app:srcCompat="@drawable/ic_insert_photo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

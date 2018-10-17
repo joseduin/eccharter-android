@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="flight.report.ec.charter.InitActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include layout="@layout/toolbar" />
+            <View style="@style/toolbar_line"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_below="@id/bar"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/horizontal_padding_spash"
+            android:layout_marginLeft="@dimen/horizontal_padding_spash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_new_report"
+                style="@style/boton_accent"
+                android:elevation="@dimen/card_elevation"
+                android:text="@string/btn_create_report"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_history"
+                style="@style/boton_accent"
+                android:text="@string/btn_history"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_aircraft"
+                style="@style/boton_accent"
+                android:text="@string/aircrafts"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/boton_accent"
+                android:text="@string/btn_logout"
+                android:layout_marginTop="@dimen/margin_top_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
